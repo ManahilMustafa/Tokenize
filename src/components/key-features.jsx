@@ -43,13 +43,13 @@ export function KeyFeatures() {
             {features.map((feature, index) => (
              <div
   key={index}
-  className="flex flex-col items-center text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-sm 
+  className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-sm 
              hover:shadow-md hover:scale-[1.02] transition-transform duration-300 ease-in-out"
 >
 
                 <feature.icon className="h-10 w-10 text-primary mb-4" />
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">{feature.description}</p>
+                <p className="text-gray-500">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -58,7 +58,7 @@ export function KeyFeatures() {
 
       {/* Divider Line */}
       <div className="flex justify-center">
-        <div className="h-px w-300 bg-gray-300 dark:bg-gray-700" />
+        <div className="h-px w-300 bg-gray-300 " />
       </div>
     </>
   )

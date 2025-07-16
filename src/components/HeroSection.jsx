@@ -7,7 +7,7 @@ export function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <section className="relative w-full pt-12 pb-8 md:pt-20 md:pb-12 lg:pt-24 lg:pb-16 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-black">
+    <section className="relative w-full pt-12 pb-8 md:pt-20 md:pb-12 lg:pt-24 lg:pb-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4 md:px-6 grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
         <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none">

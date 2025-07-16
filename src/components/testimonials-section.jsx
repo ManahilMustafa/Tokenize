@@ -17,9 +17,9 @@ export function TestimonialsSection () {
   ];
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
       <div className="container mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center text-gray-900 dark:text-white">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center text-gray-900 ">
           What Users Say
         </h2>
 
@@ -34,12 +34,12 @@ export function TestimonialsSection () {
           >
             {testimonials.map((t, idx) => (
               <SwiperSlide key={idx}>
-                <div className="p-6 flex flex-col items-center text-center rounded-2xl shadow-lg bg-white dark:bg-gray-900 max-w-xl mx-auto">
+                <div className="p-6 flex flex-col items-center text-center rounded-2xl shadow-lg bg-white  max-w-xl mx-auto">
                   <Quote className="h-10 w-10 text-primary mb-4" />
-                  <p className="text-lg italic text-gray-700 dark:text-gray-300 mb-4">
+                  <p className="text-lg italic text-gray-700  mb-4">
                     "{t.quote}"
                   </p>
-                  <p className="font-semibold text-gray-800 dark:text-gray-200">
+                  <p className="font-semibold text-gray-800">
                     — {t.author}
                   </p>
                 </div>

@@ -36,7 +36,7 @@ export function WhoItsFor() {
             {audiences.map((audience, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center bg-white dark:bg-gray-900 rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300"
+                className="flex flex-col items-center text-center bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300"
               >
                 <img
                   src={audience.image}
@@ -45,7 +45,7 @@ export function WhoItsFor() {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">{audience.title}</h3>
-                  <p className="text-gray-500 dark:text-gray-400">{audience.description}</p>
+                  <p className="text-gray-500">{audience.description}</p>
                 </div>
               </div>
             ))}
@@ -55,7 +55,7 @@ export function WhoItsFor() {
 
       {/* Divider Line */}
       <div className="flex justify-center">
-        <div className="h-px w-300 bg-gray-300 dark:bg-gray-700" />
+        <div className="h-px w-300 bg-gray-300" />
       </div>
     </>
   )
