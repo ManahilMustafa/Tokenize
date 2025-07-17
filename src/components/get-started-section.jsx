@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react"
-
+import { Link } from "react-router-dom"
 export function GetStartedSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 text-center">
@@ -9,10 +9,12 @@ export function GetStartedSection() {
           Ready to tokenize your assets?
         </p>
         <div className="flex flex-col gap-4 sm:flex-row justify-center mt-8">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 py-3">
+            <Link to="/register">
+          <button className="inline-flex items-center  justify-center whitespace-nowrap hover: cursor-pointer  rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 py-3">
             {"Start for Free"}
           </button>
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent hover:bg-muted hover:text-muted-foreground h-10 px-6 py-3">
+          </Link>
+          <button className="inline-flex items-center justify-center whitespace-nowrap hover: cursor-pointer  rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent hover:bg-muted hover:text-muted-foreground h-10 px-6 py-3">
             {"Request Enterprise Access"}
           </button>
         </div>

@@ -2,6 +2,7 @@
 import { Rocket, BookOpen, X } from "lucide-react"
 import { useState } from "react"
 import { DemoRequestForm } from "./demo-request-form"
+import { Link } from "react-router-dom"
 
 export function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -18,13 +19,15 @@ export function HeroSection() {
             zero code.
           </p>
           <div className="flex flex-col gap-4 sm:flex-row justify-center lg:justify-start">
-            <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 py-3 gap-2">
+            <Link to="/register">
+            <button className="inline-flex items-center justify-center whitespace-nowrap hover: cursor-pointer rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 py-3 gap-2">
               <Rocket className="h-5 w-5" />
               {"Start Tokenizing"}
             </button>
+            </Link>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent hover:bg-muted hover:text-muted-foreground h-10 px-6 py-3 gap-2"
+              className="inline-flex items-center justify-center whitespace-nowrap hover: cursor-pointer  rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-transparent hover:bg-muted hover:text-muted-foreground h-10 px-6 py-3 gap-2"
             >
               <BookOpen className="h-5 w-5" />
               {"Book a Demo"}
